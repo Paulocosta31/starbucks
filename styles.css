@@ -7,19 +7,20 @@
 }
 
 body {
-   
+
     padding-top: 20px;
     margin-left: 100px;
     margin-right: 100px;
-  
-    
+
+
 }
+
 .conteudo {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 h1 {
@@ -53,7 +54,7 @@ button {
 
 .starburks {
     width: 340px;
-    
+
 }
 
 .logo {
@@ -65,14 +66,16 @@ button {
     transition: 1s;
     cursor: pointer;
     margin: 10px;
-      
-    
- 
+
+
+
 }
-.botao-menu:hover{
+
+.botao-menu:hover {
     transform: translateY(-20px);
-    
+
 }
+
 .menu {
     justify-content: center;
     display: flex;
@@ -81,12 +84,14 @@ button {
 .caixa-texto {
     width: 600px;
 }
+
 .imagem-principal {
     width: 600px;
     display: flex;
     justify-content: flex-end;
     margin-top: 250px;
 }
+
 .circulo {
     position: absolute;
 
@@ -95,6 +100,58 @@ button {
     height: 100%;
     top: 0;
     left: 0;
-    clip-path:circle(600px at right 800px) ;
-    z-index:-1 ;
+    clip-path: circle(600px at right 800px);
+    z-index: -1;
+}
+
+@media screen and (max-width:900px) {
+    .conteudo {
+        display: block;
+        margin: 0%;
+        padding: 0%;
+        width: 100vw;
+        height: 100vh;
+        position: static;
+    }
+
+    .imagem-principal {
+        position: static;
+        display: block;
+    }
+
+    .caixa-texto {
+     
+        font-size: 20px;
+        position: static;
+        height: 20px;
+        
+        text-align: center;
+    }
+
+    .starburks {
+       
+        margin-top: 180px;
+        margin-left: 370px;
+        width: 250px;
+
+    }
+
+    .circulo {
+     
+        width: 100%;
+        height: 100%;
+        margin-top: 150px;
+        margin-left: 315px;
+        clip-path: circle(600px at right 1300px);
+        z-index: -1;
+
+    }
+
+    .menu {
+       
+        margin-left: 300px;
+
+
+    }
+
 }
